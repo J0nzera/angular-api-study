@@ -9,7 +9,7 @@ import { Imagem } from 'src/models/api';
 })
 export class ApiComponent implements OnInit {
 
-  imagens: Imagem;
+  imagens: any;
   erro: any;
 
   constructor(private apiService: ApiService) {
