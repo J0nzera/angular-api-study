@@ -1,0 +1,23 @@
+<p *ngIf="nome >= '5' && nome <= '8'">Meu Componente Criado!</p>
+<!-- Se o nome for Jon Silva, ele exibe a tag p -->
+<!-- !== : diferente -->
+<!-- === : igual -->
+<!-- && : e -->
+<!-- || : ou -->
+
+<input type="text" (input)="recuperarTexto($event.target.value)">
+<!-- this.nome = *** -->
+<!-- evento: oq for atribuido no input, sera jogado na variavel nome -->
+<!-- input: faz a alteração automatizada -->
+<!-- change: altera o valor depois de sair da cx -->
+<!-- blur: altera quando clica -->
+{{nome}}
+<br><br><br>
+
+
+<div *ngFor = "let item of arrayNum">
+  <p *ngIf="item !== 'Jon'">
+  {{item}}
+  </p>
+</div>
+<!-- percorre cada dodo do meu array, e cada dado que ele achar, sera um 'numero/item' -->
